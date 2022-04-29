@@ -13,7 +13,8 @@
 
 <body>
     <?php require_once "view/header.php"; ?>
-
+    <br>
+    <?php require_once "view/filemanagement.php";?>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 :root {
     --colors: #04c1e2;
-    --secondary:#F3F3F3;
+    --secondary:#ffffff;
     --danger:#CC2634;
     --font :'El Messiri', sans-serif;
   }
@@ -53,4 +53,18 @@ body {
       'wght'400,
       'GRAD'0,
       'opsz'48
+}
+
+.flex-container {
+  display: flex;
+  background-color: var(--secondary);
+}
+
+.flex-container > div {
+  color: black;
+  width: 50px;
+  margin: 4px;
+  text-align: right;
+  line-height: 30px;
+  font-size: 20px;
 }
