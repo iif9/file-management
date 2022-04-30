@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar">
+<?php
+session_start();
+if (empty($_SESSION["usernmae"])) {
+    header('Location:login.php');
+}
+?>
+
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +21,7 @@
 <body>
     <?php require_once "view/header.php"; ?>
     <br>
-    <?php require_once "view/filemanagement.php";?>
+    <?php require_once "view/filemanagement.php"; ?>
 </body>
 
 </html>
