@@ -66,7 +66,27 @@ window.addEventListener('drop',(event)=>{
 })
 
 
-// upload button
+// choose file by click file-zone
+fileZone.addEventListener('click',openExplorer)
+console.log('hi')
+function openExplorer(){
+    console.log('open explorer')
+    const fileInput = document.createElement('input')   
+    fileInput.type = 'file';
+    fileInput.name = 'files';
+    fileInput.multiple = true;
+     
+    fileInput.addEventListener('change',({target})=> {
+        if(target.files.length > 0){
+            filesArray = target.files;
+        addFile(Array.from(target.files))
+    }
+});
+    fileInput.click();
+
+}
+
+// upload files
 
 uploadBtn.addEventListener('click',uploadFiles)
 
