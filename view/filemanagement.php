@@ -2,21 +2,13 @@
 <link rel="stylesheet" href="assets/style.css">
 <div style="height:100vh" class='d-flex flex-column'>
 
+<?php require_once "db/ConnDb.php";?>
 
     <div dir='rtl' style="flex: auto; " class="row p-0 m-0 bg-dark d-flex col-12">
 
         <!--  menu bar -->
         <div id='folders' dir="rtl" class="col-lg-3  col-md-4 col-12 p-3  bg-light d-flex flex-column">
 
-
-            <div id='new_file' class="btn mb-3 d-flex align-items-center">
-                <span class="ms-2 text-dark material-symbols-outlined">
-                    upload_file
-                </span>
-                <span class="fw-bold">رفع ملف</span>
-
-            </div>
-            <br> <br>
             <div class=" mb-3 d-flex align-items-center">
 
                 <span class="ms-2 text-dark material-symbols-outlined">
@@ -56,7 +48,7 @@
                     </button>
                 </form>
 
-                <form id='form-logout' method="GET" action="#logout">
+                <form id='form-logout' method="GET" action="/logout.php">
                     <button style="background-color: var(--danger);" class="btn col-12 text-light d-flex align-items-center  rounded-sm-2 mt-5">
                         <span style="text-align: right;" class="col-5  material-symbols-outlined">
                             logout
